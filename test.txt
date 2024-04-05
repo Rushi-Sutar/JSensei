@@ -1,0 +1,27 @@
+Understanding Errors in JavaScript
+
+Errors are unexpected conditions that arise during program execution, halting normal program flow. They can occur due to syntax mistakes, runtime errors (e.g., accessing undefined variables), or exceptions thrown by external libraries.
+
+1. try...catch Statement
+
+The try...catch statement is the primary mechanism for handling errors in JavaScript. It provides a way to intercept errors and execute alternative code to prevent the program from crashing.
+
+try {
+  // Code that might throw an error
+  const result = undefinedVariable / 2; // Attempting to divide by undefined
+  console.log(result);
+} catch (error) {
+  // Code to handle the error
+  console.error("Error:", error.message); // Access error message from the error object
+  // Handle the error gracefully (e.g., provide a user-friendly message)
+}
+
+2. Error Objects
+
+try {
+  const result = parseInt("hello"); // Parsing a non-numeric string
+  console.log(result);
+} catch (error) {
+  console.error("Error:", error.name); // Output: Error: TypeError
+  console.error("Error message:", error.message); // Output: "parseInt argument must be a string and a radix"
+}
