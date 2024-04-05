@@ -136,7 +136,11 @@ header {
 
 /* Hero section styles */
 .hero {
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
+  background-image: url('/public/bgc.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: var(--text-color);
   text-align: center;
   height: 80vh;
@@ -155,6 +159,7 @@ header {
   font-size: clamp(2.5rem, -0.3704rem + 5.9801vw, 4.75rem);
 }
 .subtext{
+  background-color: transparent;
   font-weight: 400;
   font-size: clamp(1.25rem, -0.3447rem + 3.3223vw, 2.5rem);
   padding-top: 20px;
